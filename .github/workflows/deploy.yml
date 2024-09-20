@@ -9,6 +9,7 @@ on:
 jobs:
   release-api:
     runs-on: ubuntu-latest
+    permissions: write-all
     name: 'production: release - api'
 
     outputs:
