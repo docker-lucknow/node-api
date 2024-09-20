@@ -133,6 +133,10 @@ jobs:
       IMAGE_RELEASE_TAG: ${{needs.release-api.outputs.IMAGE_RELEASE_TAG}}
 
     steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{env.IMAGE_RELEASE_TAG}}
+
       - id: 'auth'
         uses: 'google-github-actions/auth@v2'
         with:
