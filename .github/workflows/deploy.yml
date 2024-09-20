@@ -192,4 +192,4 @@ jobs:
       - name: 'deploy image to cloud-run'
         run: |-
           CLOUDSDK_CORE_DISABLE_PROMPTS=1
-          gcloud run deploy node-api --image asia-south2-docker.pkg.dev/milindsingh/docker-meetup/node-api:$IMAGE_RELEASE_TAG
+          gcloud run deploy node-api --image asia-south2-docker.pkg.dev/milindsingh/docker-meetup/node-api:$IMAGE_RELEASE_TAG --region asia-south2
