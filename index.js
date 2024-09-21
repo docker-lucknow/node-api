@@ -5,7 +5,7 @@ const app = module.exports = express()
 const port = 3000
 
 app.get('/', function(req, res){
-  res.json({'message': 'Welcome to Docker Lucknow Meetup!'});
+  res.json({'message': 'Welcome to Docker Lucknow Meetup - 21st Sept 2024! '});
 });
 
 app.listen(port, () => {
